@@ -1,26 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+const styleCount = {
+  margin:'25px auto',
+  width:'510px',
+  textAlign:'center',
+}
+
+class App extends React.Component{
+  constructor(){
+    super();
+    this.state = {
+      counter:0
+    }
+  }
+  reset(){
+    this.setState({
+      counter: 0
+    })
+  }
+  updateCount(count){
+    this.setState({
+      counter: this.state.counter + count
+    })
+  }
+  funcStyleCounter(){
+    if(this.state.counter>0){
+      return {color:'#13bed8'}
+    }else if(this.state.counter<0){
+      return {color:'#e32e69'}
+    }else{return {color:'inherit'}}
+  }
+  render(){
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div style={styleCount}>
+        <h1 style={{color:'#09995d'}}>Счетчик: <span style={this.funcStyleCounter()}>{this.state.counter}</span></h1>
+        <button onClick={()=>this.updateCount(-1)}>Уменьшить -1</button>
+        <button onClick={()=>this.updateCount(1)}>Повысить +1</button>
+        <button onClick={()=>this.reset()}>Сбросить</button>
+      </div>
     </div>
   );
+}
 }
 
 export default App;
