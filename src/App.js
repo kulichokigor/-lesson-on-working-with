@@ -38,8 +38,8 @@ class App extends React.Component{
     <div>
       <div style={styleCount}>
         <h1 style={{color:'#09995d'}}>Счетчик: <span style={this.funcStyleCounter()}>{this.state.counter}</span></h1>
-        <button onClick={()=>this.updateCount(-1)}>Уменьшить -1</button>
-        <button onClick={()=>this.updateCount(1)}>Повысить +1</button>
+        <button onClick={()=>this.updateCount(-1)}>Уменьшить -1 </button>
+        <button onClick={()=>this.updateCount(1)}>Повысить +1 </button>
         <button onClick={()=>this.reset()}>Сбросить</button>
       </div>
     </div>
