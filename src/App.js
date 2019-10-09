@@ -26,22 +26,23 @@ class App extends React.Component{
   //     counter: this.state.counter + count
   //   })
   // }
-  // funcStyleCounter(){
-  //   if(this.state.counter>0){
-  //     return {color:'#13bed8'}
-  //   }else if(this.state.counter<0){
-  //     return {color:'#e32e69'}
-  //   }else{return {color:'inherit'}}
-  // }
+  funcStyleCounter(){
+    if(this.props.counter>0){
+      return {color:'#13bed8'}
+    }else if(this.props.counter<0){
+      return {color:'#e32e69'}
+    }else{return {color:'inherit'}}
+  }
   render(){
-    console.log(this.props)
   return(
     <div>
       <div style={styleCount}>
-        <h1 style={{color:'#09995d'}}>Счетчик: <span>{this.props.counter}</span></h1>
-        <button onClick={this.props.toSub}>Уменьшить -1 </button>
-        <button onClick={this.props.toAdd}>Повысить +1 </button>
-        <button onClick={this.props.onReset}>Сбросить</button>
+        <h1 style={{color:'#09995d'}}>Счетчик: <span style={this.funcStyleCounter()}>{this.props.counter}</span></h1>
+        <button onClick={this.props.toSub}>Відняти -1 </button>
+        <button onClick={this.props.toAdd}>Додати +1 </button>
+        <button onClick={this.props.onReset}>Обнулити</button>
+        <button onClick={this.props.toAddNumber.bind(this, 26)}>Додати 26</button>
+        <button onClick={()=>this.props.toAddNumber(-33)}>Відняти 33</button>
       </div>
     </div>
   );
@@ -58,7 +59,8 @@ function mapDispatchToProps(dispatch){
   return{
     toAdd:()=>dispatch({type:'ADD'}),
     toSub:()=>dispatch({type:'SUB'}),
-    onReset:()=>dispatch({type:'RES'})
+    onReset:()=>dispatch({type:'RES'}),
+    toAddNumber:(number)=>dispatch({type:'ADD_NUMBER', value: number})
   }
 }
 

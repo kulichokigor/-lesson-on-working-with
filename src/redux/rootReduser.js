@@ -1,12 +1,12 @@
 
 
 const staticCounter = {
-    counter:0
+    counter:0,
 }
 
-export default function rootReduser(state=staticCounter, actions){
-    switch(actions.type){
-        case 'ADD': 
+export default function rootReduser(state=staticCounter, action){
+    switch(action.type){
+        case 'ADD':
             return {
                 counter:state.counter + 1,
             }
@@ -18,8 +18,11 @@ export default function rootReduser(state=staticCounter, actions){
             return {
                 counter: 0,
             }
+        case 'ADD_NUMBER':
+            return {
+                counter:state.counter + action.value
+            }
+        default:
+            return state
     }
-        
-    
-    return state
 }

@@ -6,7 +6,7 @@ Step_1.1: gh-pages, script "build" i "deploy";
 
 Step_2: React-Redux => import Provider; rootReduser; store index.js, import rootReduser; <Provider store={store}>;
 
-Step_3: Create function mapStateToProps && mapDispatchToProps; відображення store через this.props; switch rootReduser; 
+Step_3: Create function mapStateToProps && mapDispatchToProps; відображення store через this.props; switch rootReduser; import {connect} from 'react-redux'; export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 ___________________________________________________________________________________
 
