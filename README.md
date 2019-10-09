@@ -4,11 +4,11 @@ Step_1: redux.js - //Reducer  //Store  //Actions ~ теорія. Методи cr
 
 Step_1.1: gh-pages, script "build" i "deploy";
 
-Step_2: React-Redux => import Provider; rootReduser; store index.js, import rootReduser; <Provider store={store}>
+Step_2: React-Redux => import Provider; rootReduser; store index.js, import rootReduser; <Provider store={store}>;
 
+Step_3: Create function mapStateToProps && mapDispatchToProps; відображення store через this.props; switch rootReduser; 
 
-
-____________________________________
+___________________________________________________________________________________
 
 Available Scripts
 In the project directory, you can run:
