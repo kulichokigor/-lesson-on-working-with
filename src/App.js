@@ -37,7 +37,7 @@ class App extends React.Component{
   return(
     <div>
       <div style={styleCount}>
-        <h1 style={{color:'#09995d'}}>Счетчик: <span style={this.funcStyleCounter()}>{this.props.counter}</span></h1>
+        <h1 style={{color:'#09995d'}}>Counter: <span style={this.funcStyleCounter()}>{this.props.counter}</span></h1>
         <button onClick={this.props.toSub}>Відняти -1 </button>
         <button onClick={this.props.toAdd}>Додати +1 </button>
         <button onClick={this.props.onReset}>Обнулити</button>
