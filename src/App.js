@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Counter from './counter'
 import {connect} from 'react-redux';
 
 
@@ -44,14 +45,16 @@ class App extends React.Component{
         <button onClick={this.props.toAddNumber.bind(this, 26)}>Додати 26</button>
         <button onClick={()=>this.props.toAddNumber(-33)}>Відняти 33</button>
       </div>
+      <Counter/>
     </div>
   );
 }
 }
 
 function mapStateToProps(state){
+  console.log(state)
   return{
-    counter:state.counter
+    counter:state.reduser1.counter
   }
 }
 
