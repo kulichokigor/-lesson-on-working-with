@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/lesson-on-working-with/static/css/main.542b5916.chunk.css",
-    "main.js": "/lesson-on-working-with/static/js/main.a04b427a.chunk.js",
-    "main.js.map": "/lesson-on-working-with/static/js/main.a04b427a.chunk.js.map",
+    "main.js": "/lesson-on-working-with/static/js/main.193cd4ed.chunk.js",
+    "main.js.map": "/lesson-on-working-with/static/js/main.193cd4ed.chunk.js.map",
     "runtime-main.js": "/lesson-on-working-with/static/js/runtime-main.e91a249c.js",
     "runtime-main.js.map": "/lesson-on-working-with/static/js/runtime-main.e91a249c.js.map",
-    "static/js/2.9db56f98.chunk.js": "/lesson-on-working-with/static/js/2.9db56f98.chunk.js",
-    "static/js/2.9db56f98.chunk.js.map": "/lesson-on-working-with/static/js/2.9db56f98.chunk.js.map",
+    "static/js/2.121963e8.chunk.js": "/lesson-on-working-with/static/js/2.121963e8.chunk.js",
+    "static/js/2.121963e8.chunk.js.map": "/lesson-on-working-with/static/js/2.121963e8.chunk.js.map",
     "index.html": "/lesson-on-working-with/index.html",
-    "precache-manifest.05200484b2532a0b4ad634a0ff9edba7.js": "/lesson-on-working-with/precache-manifest.05200484b2532a0b4ad634a0ff9edba7.js",
+    "precache-manifest.5d0ed7d99f50b38e6a6e885ac4a745f8.js": "/lesson-on-working-with/precache-manifest.5d0ed7d99f50b38e6a6e885ac4a745f8.js",
     "service-worker.js": "/lesson-on-working-with/service-worker.js",
     "static/css/main.542b5916.chunk.css.map": "/lesson-on-working-with/static/css/main.542b5916.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.e91a249c.js",
-    "static/js/2.9db56f98.chunk.js",
+    "static/js/2.121963e8.chunk.js",
     "static/css/main.542b5916.chunk.css",
-    "static/js/main.a04b427a.chunk.js"
+    "static/js/main.193cd4ed.chunk.js"
   ]
 }
