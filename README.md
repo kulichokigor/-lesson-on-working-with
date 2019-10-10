@@ -9,6 +9,8 @@ Step_2: React-Redux => import Provider; rootReduser; store index.js, import root
 Step_3: Create function mapStateToProps && mapDispatchToProps; відображення store через this.props; switch rootReduser; import {connect} from 'react-redux'; export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 Step_4: Об'єднання кількох reduser через {combineReducers}; !!!!!!
+
+Step_5: Middleware; const loggerMiddleware = store => next => action => {const result = next(action) return result}; applyMiddleware(loggerMiddleware) в store
 ___________________________________________________________________________________
 
 Available Scripts
